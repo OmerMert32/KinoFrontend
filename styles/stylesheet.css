@@ -1,0 +1,143 @@
+/*
+ Horizontal style BEGIN
+*/
+
+ul.menu-horizontal {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.menu-horizontal li {
+    float: left;
+}
+
+ul.menu-horizontal li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.menu-horizontal li a:hover:not(.active) {
+    background-color: #111;
+}
+
+
+ul.menu-horizontal a.active {
+    background-color: lightgrey;
+}
+
+/*
+ Horizontal style END
+*/
+
+/*
+ Verical style BEGIN
+*/
+
+
+#topnav {
+    /*margin-left: 20px; */
+    width: 15%;
+    display: flex;
+}
+
+ul.menu-vertical {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-right: solid 2px lightgrey;
+}
+
+ul.menu-vertical li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.menu-vertical li a.active {
+    background-color: #E6F7FF;
+    color: #096DD9;
+
+}
+
+ul.menu-vertical li a:hover:not(.active) {
+    background-color: #E6F7FF;
+    color: #40A9FF;
+}
+
+.vertical {
+    display: flex;
+}
+ul.menu-vertical {
+    height: 100%;
+}
+/*
+ Vertical style BEGIN
+*/
+
+/*
+ Simple style BEGIN
+*/
+ul.menu-simple {
+    list-style-type: none;
+    padding: 0;
+    margin: 5px;
+}
+
+ul.menu-simple li {
+    /*
+    display block (default) --> Vertical
+    display inline --> Horizontal
+    */
+    display: inline;
+    margin-right: 5px;
+}
+
+#content {
+    display: block;
+    margin: 15px;
+    width: 100%;
+
+}
+
+.main-page {
+    display: block;
+}
+
+#topbar {
+    width: 100vw;
+    height: fit-content;
+    border-bottom: 2px solid #efeeee;
+}
+#topbar-content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1vh;
+}
+.topbar-buttons {
+/*background-color: white;*/
+padding-top: 1vh;
+padding-bottom: 1vh;
+}
+.topbar-buttons:hover {
+    background-color: lightgrey;
+}
+
+
+.site-content {
+    display: flex;
+}
+
+/*
+ Simple style END
+*/

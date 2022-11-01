@@ -1,0 +1,50 @@
+<div class="template">
+    <link rel="stylesheet" href="sites/employee/employee.css" />
+    <link rel="stylesheet" href="sites/employee/editEmployee.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <div style="display: flex;">
+        <div id="extra-content" style="display: none">
+            <div id="editScheduleForm" class="editScheduleForm">
+                <div id="edit-banner">
+                    <h1>Administrer opgave</h1>
+                    <span class="material-symbols-outlined">close</span>
+                </div>
+                <input id="taskid" hidden>
+                <div class="item">
+                    <p>Dato</p>
+                    <input type="date" name="bdate" id="bdate" />
+                    <i class="fas fa-calendar-alt"></i>
+                </div>
+                <div class="item">
+                    <p>Tid</p>
+                    <div class="time-item">
+                        <text>Fra:</text>
+                        <input type="time" name="starttime" id="starttime" placeholder="Starttid"/>
+                        <text>Til:</text>
+                        <input type="time" name="endtime" id="endtime" />
+                    </div>
+                </div>
+                <div class="item">
+                    <p>Medarbejder</p>
+                    <select name="employee" id="employee">
+                    </select>
+                </div>
+                <div class="item">
+                    <p>Opgave</p>
+                    <select name="worktask" id="worktask">
+                    </select>
+                </div>
+                <div class="item">
+                    <p>Kort beskrivelse af opgave</p>
+                    <textarea name="taskdescription" id="taskdescription" rows="3" ></textarea>
+                </div>
+                <div class="btn-block">
+                    <button id="update-btn" type="submit">Færdig</button>
+                </div>
+            </div>
+        </div>
+        <div class="timetable">
+    </div>
+    </div>
+</div>

@@ -1,0 +1,108 @@
+html, body {
+    min-height: 100%;
+}
+
+.editScheduleForm {
+    padding: 20px;
+    border-radius: 6px;
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(94, 193, 236, 0.23);
+}
+
+#edit-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border: 2px solid #5ec1ec;
+    border-radius: 10px;
+    background-color: #5ec1ec;
+
+    color: white;
+}
+#edit-banner {
+    cursor: pointer;
+}
+#edit-banner h1 {
+    margin: 5px;
+    font-size: 20px;
+}
+
+.item input, textarea, select {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+.item input {
+    width: calc(100%);
+    padding: 5px;
+}
+.item select {
+    width: 100%;
+    padding: 7px 0;
+    background: transparent;
+}
+.item textarea {
+    width: calc(100%);
+    resize: none;
+    padding: 5px;
+}
+.item:hover p, .item:hover i, .question:hover p, .question label:hover, input:hover::placeholder {
+    color: #5ec1ec;
+}
+.item input:hover, .item select:hover, .item textarea:hover {
+    border: 1px solid transparent;
+    box-shadow: 0 0 6px 0 #5ec1ec;
+    color: #5ec1ec;
+}
+.item {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.item p {
+    margin-bottom: 3px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 100;
+    cursor: pointer;
+}
+.btn-block {
+    margin-top: 10px;
+    text-align: center;
+}
+#update-btn {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #5ec1ec;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+#update-btn:hover {
+    background: #82c9e8;
+}
+
+@media (min-width: 568px) {
+    .time-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .time-item input {
+        width: calc(50% - 30px);
+    }
+    .time-item text {
+        padding-right: 20px;
+        padding-left: 10px;
+        padding-bottom: 8px;
+    }
+}

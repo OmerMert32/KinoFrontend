@@ -1,0 +1,30 @@
+#top-del{
+    justify-content: space-between;
+    display: flex
+}
+#top-left{
+    display: flex
+}
+#tilbage-pil{
+    padding-top: 1vh;
+    cursor: pointer;
+}
+#tilbage-pil:hover {
+    background-color: #40A9FF;
+}
+
+#arbejsopgaver{
+    margin-top: 1.5vh;
+    font-size: 15px;
+    color: lightgray;
+}
+
+#buttons{
+    background-color: white;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    float: right;
+}
+.button:hover {
+    background-color: lightgrey;
+}
